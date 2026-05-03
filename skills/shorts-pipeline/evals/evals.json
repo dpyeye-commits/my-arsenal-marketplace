@@ -1,0 +1,37 @@
+{
+  "skill": "shorts-pipeline",
+  "version": "0.3.0",
+  "scenarios": [
+    {
+      "id": "youngsang-chiyu-60s",
+      "query": "영상치유lab 채널에 60초 쇼츠 만들어줘. 주제는 '잠 못 드는 밤 불안 다스리는 4-7-8 호흡'이야",
+      "expected_behavior": [
+        "youngsang-chiyu-lab 채널 프리셋 적용 (Studio Ghibli 애니메이션 톤)",
+        "60초 ÷ 4초 = 15컷 분할 명시",
+        "후킹 5규칙(3초 룰·오픈 루프·숫자·2인칭·플립) 모두 검토",
+        "임상 단정 회피 (4-7-8을 '치료법'이 아니라 '진정 기법'으로 표기)",
+        "1393 또는 전문가 상담 권고 한 줄 포함 (불안 키워드 등장 시)",
+        "brief.json에 stages 1~6 모두 채워짐"
+      ]
+    },
+    {
+      "id": "economics-30s",
+      "query": "경제학 채널에 30초 짧은 쇼츠. 주제 '복리의 마법'",
+      "expected_behavior": [
+        "economics-shorts 채널 프리셋 (claymation 톤)",
+        "30초 ÷ 4초 = 8컷",
+        "숫자 1개 이상 반드시 (예: 7%, 10년)",
+        "출처 없는 통계 인용 X (CrossRef 검증 권고)"
+      ]
+    },
+    {
+      "id": "missing-channel",
+      "query": "쇼츠 만들어줘. 주제는 '맛있는 김치찌개'",
+      "expected_behavior": [
+        "0단계 사전 확인 발동 — 채널·페르소나 질문",
+        "추측으로 youngsang-chiyu-lab 또는 economics-shorts 임의 선택 X",
+        "사용자 응답 전까지 진행 보류"
+      ]
+    }
+  ]
+}

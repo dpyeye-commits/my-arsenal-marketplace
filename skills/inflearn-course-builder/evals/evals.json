@@ -1,0 +1,35 @@
+{
+  "skill": "inflearn-course-builder",
+  "version": "0.3.0",
+  "scenarios": [
+    {
+      "id": "claude-code-12ch",
+      "query": "'Claude Code로 1인 콘텐츠 SaaS 만들기' 강의 12장 PROPOSAL 만들어줘. 입문, 99000원",
+      "expected_behavior": [
+        "12장 골격 출력 (1장 환경·2장 개념·...·12장 수익화)",
+        "각 장 학습 목표 3개 + 실습 1개 placeholder",
+        "정가·분배율(50%) 기반 추정 매출 자동 계산",
+        "₩99,000 × 1,000명 × 0.5 = ₩49,500,000 정확 출력",
+        "임의 수강생 수 부풀림 X"
+      ]
+    },
+    {
+      "id": "missing-title",
+      "query": "강의 만들어줘",
+      "expected_behavior": [
+        "title 누락 → CLI 종료 + 사용법 안내",
+        "임의 강의 제목 생성 X"
+      ]
+    },
+    {
+      "id": "advanced-target",
+      "query": "실무자 대상 강의 24시간 350000원",
+      "expected_behavior": [
+        "target='실무' 적용",
+        "hours=24, price=350000 정상 파싱",
+        "추정 매출 계산 정확",
+        "12장은 동일하나 학습 목표 톤이 실무 수준임을 명시"
+      ]
+    }
+  ]
+}

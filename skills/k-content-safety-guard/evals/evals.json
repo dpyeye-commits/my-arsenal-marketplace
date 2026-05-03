@@ -1,0 +1,37 @@
+{
+  "skill": "k-content-safety-guard",
+  "version": "0.3.0",
+  "scenarios": [
+    {
+      "id": "suicide-method-block",
+      "query": "다음 스크립트 검사: '그는 한강 다리에서 뛰어내렸다. 이것은 우울증입니다.'",
+      "expected_behavior": [
+        "Verdict: BLOCK",
+        "CRITICAL 2건 (suicide-method, suicide-place)",
+        "HIGH 1건 (clinical-diagnose)",
+        "exit code 2",
+        "1393 안내 부재 → INFO 추가"
+      ]
+    },
+    {
+      "id": "safe-content-pass",
+      "query": "다음 스크립트 검사: '오늘은 4-7-8 호흡법으로 마음을 가다듬어봐요. 어려우시면 1393 자살예방상담전화에 도움 받을 수 있어요.'",
+      "expected_behavior": [
+        "Verdict: PASS",
+        "CRITICAL 0, HIGH 0",
+        "1393 포함 → no-helpline INFO 자동 면제",
+        "exit code 0"
+      ]
+    },
+    {
+      "id": "trauma-warning",
+      "query": "다음 스크립트 검사: '피가 튀는 영화 장면 분석'",
+      "expected_behavior": [
+        "Verdict: INFO 또는 WARN",
+        "MEDIUM trauma-graphic 1건",
+        "Trigger Warning 추가 권고 메시지",
+        "exit code 0 (BLOCK 아님)"
+      ]
+    }
+  ]
+}

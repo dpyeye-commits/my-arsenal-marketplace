@@ -1,0 +1,35 @@
+{
+  "skill": "business-card-svg",
+  "version": "0.3.0",
+  "scenarios": [
+    {
+      "id": "korean-medical-card",
+      "query": "허준약초대학 사회적 협동조합 대학총장 유호종 010-3336-7002 hjyou@naver.com 명함 만들어줘",
+      "expected_behavior": [
+        "0단계 사전 확인 — 직군(의료) 매핑·주소·후가공·양면 여부 질문",
+        "직군 누락이면 일반 톤으로 fallback (네이비·화이트 의료 톤 추측 X)",
+        "90×50mm + Bleed 3mm = 96×56mm SVG 생성",
+        "맑은 고딕 fallback 폰트 명시",
+        "CMYK 변환 가이드 주석 포함"
+      ]
+    },
+    {
+      "id": "minimal-args",
+      "query": "이름·전화번호만 있는 명함",
+      "expected_behavior": [
+        "회사명·직책·이메일 누락 — 사전 확인 발동",
+        "CLI 스크립트는 missing required로 종료 + 안내",
+        "임의 회사명 생성 X"
+      ]
+    },
+    {
+      "id": "back-slogan",
+      "query": "예방의학·건강회복·건강증진 슬로건으로 뒷면",
+      "expected_behavior": [
+        "검정 배경 + 흰 슬로건 텍스트 SVG 생성",
+        "letter-spacing 2 적용 (한글 가독성)",
+        "앞·뒷면 분리 출력"
+      ]
+    }
+  ]
+}

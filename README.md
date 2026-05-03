@@ -1,6 +1,6 @@
 # my-arsenal-marketplace
 
-최감독 무기고(Arsenal HQ) Claude Code 플러그인 마켓플레이스 — **5종 스킬 v0.1.0**
+최감독 무기고(Arsenal HQ) Claude Code 플러그인 마켓플레이스 — **5종 스킬 v0.2.0**
 
 **한 줄**: 박사·영상·디자인·콘텐츠 안전·강의 양산 5 영역의 한국 시장 특화 Claude Code 스킬.
 
@@ -65,8 +65,27 @@
 
 ## 로드맵
 
-- **v0.1.0 (현재)**: 5종 스킬 골격 + frontmatter
-- **v0.2.0**: 각 스킬 실행 코드(node·python) + 사전 확인 ask_user_input
+- **v0.1.0**: 5종 스킬 골격 + frontmatter
+- **v0.2.0 (현재)**: 각 스킬 `run.mjs` 실행 코드 — CrossRef·SVG 생성·안전 검사 등 동작 가능
+
+## 직접 실행 (플러그인 설치 없이도)
+
+```bash
+# 인용 검증
+node skills/phd-citation-verifier/run.mjs --query "Kahneman thinking fast slow 2011"
+
+# 안전 검사
+echo "스크립트 텍스트" | node skills/k-content-safety-guard/run.mjs
+
+# 명함 SVG
+node skills/business-card-svg/run.mjs --org "회사" --name "이름" --title "직책" --phone "010-..." --email "..."
+
+# 강의 12장 골격
+node skills/inflearn-course-builder/run.mjs --title "강의명"
+
+# 숏폼 brief
+node skills/shorts-pipeline/run.mjs --topic "주제" --channel youngsang-chiyu-lab
+```
 - **v0.3.0**: 한국 결제(토스·카카오) 연동 + 라이선스 키
 - **v1.0.0**: Agent37 등재 + 인프런 강의 동시 출시
 

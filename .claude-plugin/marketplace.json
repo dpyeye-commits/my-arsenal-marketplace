@@ -2,7 +2,7 @@
   "metadata": {
     "name": "my-arsenal-marketplace",
     "description": "최감독 무기고 — 숏폼·박사·디자인·콘텐츠 안전·강의 양산 5종 스킬 마켓플레이스",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Jaeyong Choi (dpyeye@gmail.com)"
   },
   "plugins": [

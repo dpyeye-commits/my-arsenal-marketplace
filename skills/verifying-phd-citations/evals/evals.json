@@ -1,5 +1,5 @@
 {
-  "skill": "phd-citation-verifier",
+  "skill": "verifying-phd-citations",
   "version": "0.3.0",
   "scenarios": [
     {

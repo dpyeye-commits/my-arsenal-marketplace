@@ -2,39 +2,39 @@
   "metadata": {
     "name": "my-arsenal-marketplace",
     "description": "최감독 무기고 — 숏폼·박사·디자인·콘텐츠 안전·강의 양산 5종 스킬 마켓플레이스",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "author": "Jaeyong Choi (dpyeye@gmail.com)"
   },
   "plugins": [
     {
-      "name": "shorts-pipeline",
+      "name": "producing-shorts",
       "description": "5+1단계 숏폼 양산 — YouTube 검색·제목 10안·60초 대본·TTS·이미지 15컷·썸네일 3안",
       "source": ".",
-      "skills": ["./skills/shorts-pipeline"]
+      "skills": ["./skills/producing-shorts"]
     },
     {
-      "name": "phd-citation-verifier",
+      "name": "verifying-phd-citations",
       "description": "박사 논문 APA 7 한국어 인용 자동 검증 + CrossRef DOI 보강 + CopyKiller 회피 99 룰",
       "source": ".",
-      "skills": ["./skills/phd-citation-verifier"]
+      "skills": ["./skills/verifying-phd-citations"]
     },
     {
-      "name": "business-card-svg",
+      "name": "designing-business-cards",
       "description": "한국 명함 SVG 자동 생성 — 90×50mm·CMYK·후가공·양각음각·11직군 매트릭스",
       "source": ".",
-      "skills": ["./skills/business-card-svg"]
+      "skills": ["./skills/designing-business-cards"]
     },
     {
-      "name": "k-content-safety-guard",
+      "name": "guarding-korean-content-safety",
       "description": "한국어 콘텐츠 임상 단정 금지·자살 미디어 가이드·트라우마 트리거 안전 자동 검사",
       "source": ".",
-      "skills": ["./skills/k-content-safety-guard"]
+      "skills": ["./skills/guarding-korean-content-safety"]
     },
     {
-      "name": "inflearn-course-builder",
+      "name": "building-inflearn-courses",
       "description": "인프런 강의 12장 자동 양산 — PROPOSAL·슬라이드·실습 코드·5종 인용 부록",
       "source": ".",
-      "skills": ["./skills/inflearn-course-builder"]
+      "skills": ["./skills/building-inflearn-courses"]
     }
   ]
 }

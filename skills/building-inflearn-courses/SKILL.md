@@ -1,6 +1,6 @@
 ---
-name: inflearn-course-builder
-description: 사용자가 "인프런 강의 만들기", "온라인 강의 12장 기획", "PROPOSAL 작성", "강의 슬라이드 자동 양산"이라고 요청하면 본 스킬 사용. 12장 PROPOSAL·슬라이드·실습 코드·5종 인용 부록 풀스택.
+name: building-inflearn-courses
+description: Builds 12-chapter Inflearn course packages (PROPOSAL, slides, hands-on code, 5-style citation appendix) with auto revenue estimation. Use when the user requests 인프런 강의 만들기, 온라인 강의 12장 기획, PROPOSAL 작성, or 강의 슬라이드 자동 양산.
 type: skill
 ---
 

@@ -1,6 +1,6 @@
 ---
-name: business-card-svg
-description: 사용자가 "명함 디자인", "명함 SVG 생성", "비즈니스 카드", "한국 명함 표준"이라고 요청하면 본 스킬 사용. 90×50mm·CMYK·후가공 8기법·11직군 매트릭스·양각음각 타이포 자동.
+name: designing-business-cards
+description: Designs Korean business cards as 90×50mm CMYK SVG with 11 occupation matrix, 8 finishing techniques, and emboss/deboss typography. Use when the user requests 명함 디자인, 명함 SVG, 비즈니스 카드, or 한국 명함 표준.
 type: skill
 ---
 

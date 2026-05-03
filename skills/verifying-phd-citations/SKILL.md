@@ -1,6 +1,6 @@
 ---
-name: phd-citation-verifier
-description: 사용자가 "APA 인용 검증", "참고문헌 양식 확인", "CrossRef DOI 보강", "박사 논문 인용", "CopyKiller 회피"라고 요청하면 본 스킬 사용. APA 7 한국어 표준 14종 + CrossRef 자동 보강 + 99 룰 검증.
+name: verifying-phd-citations
+description: Verifies and formats APA 7 Korean academic citations across 14 source types, augments DOIs via CrossRef, and applies CopyKiller 99-rule avoidance. Use when the user requests APA 인용 검증, 참고문헌 양식 확인, CrossRef DOI 보강, 박사 논문 인용, or CopyKiller 회피.
 type: skill
 ---
 

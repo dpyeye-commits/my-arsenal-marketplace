@@ -1,6 +1,6 @@
 ---
-name: shorts-pipeline
-description: 사용자가 "쇼츠 만들어줘", "숏폼 영상 기획", "유튜브 쇼츠 5+1 단계", "60초 대본"이라고 요청하면 본 스킬 사용. YouTube 검색 → 제목 10안 → 60초 대본(후킹 5규칙) → TTS → 이미지 프롬프트 15컷 → 썸네일 3안의 풀스택 파이프라인.
+name: producing-shorts
+description: Produces 5+1 stage YouTube Shorts (search, 10 title variants, 60s script with 5 hook rules, TTS, 15-cut image prompts, 3 thumbnail variants). Use when the user requests 쇼츠, 숏폼 영상 기획, 유튜브 쇼츠, or 60초 대본.
 type: skill
 ---
 

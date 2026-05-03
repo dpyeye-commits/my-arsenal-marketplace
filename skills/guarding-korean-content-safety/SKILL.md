@@ -1,6 +1,6 @@
 ---
-name: k-content-safety-guard
-description: 사용자가 "콘텐츠 안전 검사", "자살 미디어 가이드", "임상 단정 검증", "트라우마 트리거 점검", "심리 콘텐츠 검수"라고 요청하면 본 스킬 사용. 한국 자살 미디어 가이드 + 임상 단정 금지 + 트라우마 안전 자동 검사.
+name: guarding-korean-content-safety
+description: Guards Korean psychological content against suicide-media-guideline violations, clinical-diagnosis assertions, and trauma triggers. Use when the user requests 콘텐츠 안전 검사, 자살 미디어 가이드, 임상 단정 검증, 트라우마 트리거 점검, or 심리 콘텐츠 검수.
 type: skill
 ---
 
